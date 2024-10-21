@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .contenedor-flexible{
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100vh;
+        align-content: flex-start;
+    }
+    .contenedor-flexible-2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .uno{
+        background-color: rgb(235, 0, 0);
+        flex-basis:50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 100vh;
+        background-image: url('burger.jpg');
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .dos{
+        background-color: rgb(255, 230, 2);
+        flex-basis:50vh;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-image: url('burger2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .tres{
+        background-color: rgb(7, 241, 19);
+        flex-basis:50vh;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-image: url('burger3.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .opaco{
+        background-color: rgba(0,0,0,0,5);
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="contenedor-flexible">
+        <div class="uno elemento-flexible">
+            <div class="opaco">1</div>
+        </div>
+        <div class="contenedor-flexible-2">
+            <div class="dos elemento-flexible">2</div>
+            <div class="tres elemento-flexible">3</div>
+        </div>
+    </div>
+</body>
+</html>
